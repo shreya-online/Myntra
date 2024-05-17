@@ -1,52 +1,40 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import TextField from '@mui/material/TextField';
+import { Box, Button, Card, CardMedia, Grid, TextField, Typography } from '@mui/material';
 import InputAdornment from '@mui/material/InputAdornment';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import FormControl from '@mui/material/FormControl';
-import loginImage from '../assets/img/loginBanner.jpeg'
+import loginImage from '../assets/img/loginBanner.jpg'
+
 
 function loginOrSignup(){
     return (
-      <>
-        <Card style={{ backgroundColor: "pink" }}>
-          <Grid
-            container
-            justifyContent="center"
-            direction="column"
-            alignItems="center"
-            style={{ marginTop: "25px" }}
-          >
-            <Grid item xs={6}>
-              <CardMedia
-                component="img"
-                height="170"
-                src={loginImage}
-                alt="loginImage"
-              />
-              {/* <img height= '150px'src={loginImage} alt='loginImage'/> */}
-            </Grid>
-            <Grid item xs={6}>
-              <Typography gutterBottom> <strong>Login</strong> or <strong>Signup</strong></Typography>
-              <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
-                <OutlinedInput
-                    // id="outlined-adornment-weight"
-                    startAdornment={<InputAdornment position="start">+91 | </InputAdornment>}
-                    aria-describedby="outlined-weight-helper-text"
-                    inputProps={{
-                    // 'aria-label': 'weight',
-                    }}
-                />
-              </FormControl>
-            </Grid>
-          </Grid>
-        </Card>
-      </>
+        <div style={{ backgroundColor: "#FFF3EC" }}>
+          <Box component="span"sx={{ display: "inline-block", mx: "500px", transform: "scale(0.8)" }} >
+            <Card>
+              <Grid container direction="column">
+                <CardMedia component="img" height="190" src={loginImage} alt="loginImage"/>
+                <Typography variant="h6" gutterBottom style={{margin: "50px 40px 15px"}}>
+                  <strong>Login</strong> or <strong>Signup</strong>
+                </Typography>
+                <TextField style={{margin: "10px 40px"}}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">+91</InputAdornment>
+                    ),
+                    placeholder: "Mobile Number",
+                  }} />
+                <Typography gutterBottom style={{margin: "15px 40px"}}>
+                  By continuing, I agree to the <strong>Terms of Use</strong> & <strong>Privacy Policy </strong>{" "}
+                </Typography>
+                <Button variant="contained" size="large" style={{ backgroundColor: "#FE3E7F", margin: "10px 40px" }}>
+                  <strong>Continue</strong>
+                </Button>
+                <Typography gutterBottom style={{margin: "10px 40px 150px"}}>
+                  Having trouble logging in? <strong>Get help</strong>{" "}
+                </Typography>
+              </Grid>
+            </Card>
+          </Box>
+        </div>
     );
-
 }
 
 export default loginOrSignup;
