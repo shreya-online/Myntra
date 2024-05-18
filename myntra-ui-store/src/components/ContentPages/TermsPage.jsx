@@ -1,34 +1,25 @@
 import React from 'react';
 import { Box, Card, CardMedia, Grid, Typography } from '@mui/material';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-// export const theme = createTheme({
-//     components: {
-//       MuiFormLabel: {
-//         styleOverrides: {
-//           asterisk: {
-//             color: "#db3131",
-//             "&$error": {
-//               color: "#db3131",
-//             },
-//           },
-//         },
-//       },
-//       Typography:{
-//         color: "#7E818C"
-//       }
+// import { createTheme, ThemeProvider } from '@mui/material/styles';
+// import {  makeStyles } from '@mui/styles';
+
+// const useStyles = makeStyles(theme => ({
+//     fontColor: {
+//         color:"#7E818C"
 //     },
-//   });
+// }))
+// const theme = createTheme();
 
 function TermsPage(){
-
+    // const classes = useStyles();
     return(
         <div>
             {/* <Grid component="span"sx={{ display: "inline-block", mx: "100px", transform: "scale(0.8)",}} > */}
             <div>
             <Typography variant="h5" style={{margin:"30px 450px", alignContent:"center", alignContent: "center"}}>MYNTRA: TERMS OF USE</Typography>
 
-            <Typography variant="body2" style={{color:"#7E818C"}}>Welcome to Myntra.This document is an electronic record in terms of Information Technology Act, 2000
+            <Typography variant="body2">Welcome to Myntra.This document is an electronic record in terms of Information Technology Act, 2000
                  and published in accordance with the provisions of Rule 3 ) of the Information Technology (Intermediaries guidelines) 
                  Rules, 2011 that require publishing the rules and regulations, privacy policy and Terms of Use for access or usage of
                   Myntra marketplace platform - www.myntra.com (hereinafter referred to as "Platform")</Typography> <br />
