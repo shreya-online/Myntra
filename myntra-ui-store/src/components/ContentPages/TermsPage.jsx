@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box, Card, CardMedia, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import styled from 'styled-components';
+import Header from '../Navbar/HeaderBar'
 
 
 const StyledTypography = styled(Typography)`
@@ -22,7 +23,8 @@ const StyledList = styled.li`
 function TermsPage(){
     return(
         <>
-        <Typography variant="h5" style={{margin:"30px 570px", alignContent:"center", alignContent: "center"}}>MYNTRA: TERMS OF USE</Typography>
+        <Header />
+        <Typography variant="h6" style={{margin:"30px 570px", alignContent:"center", alignContent: "center"}}>MYNTRA: TERMS OF USE</Typography>
         <Grid style={{margin: "40px 270px 40px"}}>
             {/* <Grid component="span"sx={{ display: "inline-block", mx: "100px", transform: "scale(0.8)",}} > */}
             

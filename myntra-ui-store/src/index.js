@@ -4,6 +4,7 @@ import './index.css';
 // import App from './App';
 import LoginOrSignup from './components/LoginOrSignup';
 import TermsPage from './components/ContentPages/TermsPage';
+import PrivacyPolicyPage from './components/ContentPages/PrivacyPolicyPage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +12,7 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     <LoginOrSignup />
+    {/* <PrivacyPolicyPage /> */}
     {/* <TermsPage /> */}
   </React.StrictMode>
 );

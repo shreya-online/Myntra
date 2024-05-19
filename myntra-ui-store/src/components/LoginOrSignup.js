@@ -1,15 +1,15 @@
 import React from 'react';
-import { Box, Button, Card, CardMedia, Container, Grid, TextField, Typography } from '@mui/material';
+import { Box, Button, Card, CardMedia, Grid, TextField, Typography } from '@mui/material';
 import InputAdornment from '@mui/material/InputAdornment';
 import loginImage from '../assets/img/loginBanner.jpg'
-import AppBar from '@mui/material/AppBar';
-// import AdbIcon from '@mui/icons-material/Adb';
-import Toolbar from '@mui/material/Toolbar';
+import Header from '../components/Navbar/HeaderBar';
+
 
 
 function loginOrSignup(){
     return (
-      <>
+      <div>
+      <Header />
         <div style={{ backgroundColor: "#FFF3EC" }}>
           <Box component="span"sx={{ display: "inline-block", mx: "500px", transform: "scale(0.8)" }} >
             <Card>
@@ -38,7 +38,7 @@ function loginOrSignup(){
             </Card>
           </Box>
         </div>
-        </>
+        </div>
     );
 }
 

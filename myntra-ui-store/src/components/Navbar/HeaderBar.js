@@ -1,6 +1,10 @@
 import React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import { Container, Typography } from '@mui/material';
 
-function header(){
+function Header(){
+  return(
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -25,5 +29,6 @@ function header(){
           </Toolbar>
           </Container>
       </AppBar>
+  )
 }
-export default header();
+export default Header;
