@@ -8,7 +8,7 @@ import Header from '../components/Navbar/HeaderBar';
 
 function loginOrSignup(){
     return (
-      <div>
+      <>
       <Header />
         <div style={{ backgroundColor: "#FFF3EC" }}>
           <Box component="span"sx={{ display: "inline-block", mx: "500px", transform: "scale(0.8)" }} >
@@ -38,7 +38,7 @@ function loginOrSignup(){
             </Card>
           </Box>
         </div>
-        </div>
+        </>
     );
 }
 
