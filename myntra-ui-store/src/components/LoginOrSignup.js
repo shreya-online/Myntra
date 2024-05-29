@@ -10,11 +10,11 @@ function loginOrSignup(){
     return (
       <>
       <Header />
-        <div style={{ backgroundColor: "#FFF3EC" }}>
-          <Box component="span"sx={{ display: "inline-block", mx: "500px", transform: "scale(0.8)" }} >
+        <Grid  display="flex" alignItems="center" justifyContent="center" style={{ backgroundColor: "#FFF3EC" }}>
+          <Box component="span"  sx={{ display: "inline-block",  transform: "scale(0.8)" }} >
             <Card>
-              <Grid container direction="column">
-                <CardMedia component="img" height="190" src={loginImage} alt="loginImage"/>
+              <Grid  FlexDirection="column">
+                <CardMedia component="img" minHeight="100vh" src={loginImage} alt="loginImage"/>
                 <Typography variant="h6" gutterBottom style={{margin: "50px 40px 15px"}}>
                   <strong>Login</strong> or <strong>Signup</strong>
                 </Typography>
@@ -37,7 +37,7 @@ function loginOrSignup(){
               </Grid>
             </Card>
           </Box>
-        </div>
+        </Grid>
         </>
     );
 }

@@ -11,9 +11,11 @@ import MenuItem from '@mui/material/MenuItem';
 import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
+
 import MenuIcon from '@mui/icons-material/Menu';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import AdbIcon from '@mui/icons-material/Adb';
 
 import Logo from '../../assets/icons/Logo.jpg';
 
@@ -83,7 +85,7 @@ function Header(){
       <AppBar position="static">
         <Container maxWidth="xl" style={{ backgroundColor: "white" }}>
           <Toolbar disableGutters>
-            {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
+            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
             <Link href="#" underline="none">
               <a style={{ textDecoration: "none" }}>
                 <img height="40px" src={Logo} alt="logo"></img>
@@ -97,7 +99,7 @@ function Header(){
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
+                color="black"
               >
                 <MenuIcon />
               </IconButton>
