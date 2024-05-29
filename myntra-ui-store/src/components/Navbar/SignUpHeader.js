@@ -15,6 +15,7 @@ import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import AdbIcon from '@mui/icons-material/Adb';
 
 import Logo from '../../assets/icons/Logo.jpg';
@@ -68,7 +69,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-function Header(){
+function SignUpHeader(){
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -159,12 +160,18 @@ function Header(){
                 />
               </Search>
             </Box>
-            <Box>
+            {/* <Box sx={{margin:"10px"}}>
+              <PersonOutlineIcon style={{color: 'black'}} />
+              <Typography variant='body2' style={{color:"black"}}>Profile</Typography>
+            </Box> */}
+            <Box sx={{marginLeft:"50px", marginRight:"10px"}}>
                 <FavoriteBorderOutlinedIcon style={{color: 'black'}}/>
+                <Typography variant='body2' style={{color:"black", align:"center"}}>Wishlist</Typography>
             </Box>
             
-            <Box>
+            <Box sx={{margin:"10px"}}>
               <ShoppingBagOutlinedIcon style={{color: 'black'}} />
+              <Typography variant='body2' style={{color:"black"}}>Bag</Typography>
             </Box>
 
            
@@ -174,4 +181,4 @@ function Header(){
     </>
   );
 }
-export default Header;
+export default SignUpHeader;

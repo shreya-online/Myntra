@@ -2,14 +2,14 @@ import React from 'react';
 import { Box, Button, Card, CardMedia, Grid, TextField, Typography } from '@mui/material';
 import InputAdornment from '@mui/material/InputAdornment';
 import loginImage from '../assets/img/loginBanner.jpg'
-import Header from '../components/Navbar/HeaderBar';
+import SignUpHeader from './Navbar/SignUpHeader';
 
 
 
 function loginOrSignup(){
     return (
       <>
-      <Header />
+      <SignUpHeader />
         <Grid  display="flex" alignItems="center" justifyContent="center" style={{ backgroundColor: "#FFF3EC" }}>
           <Box component="span"  sx={{ display: "inline-block",  transform: "scale(0.8)" }} >
             <Card>

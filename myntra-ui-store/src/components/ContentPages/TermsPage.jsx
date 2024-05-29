@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Typography } from '@mui/material';
 import styled from 'styled-components';
-import Header from '../Navbar/HeaderBar'
+import Header from '../Navbar/SignUpHeader'
 
 
 const StyledTypography = styled(Typography)`
