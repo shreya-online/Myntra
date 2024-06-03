@@ -23,7 +23,6 @@ import Logo from '../../assets/icons/Logo.jpg';
 
 // For navbar
 const pages = ['Men', 'Women', 'Kids','Home living', 'Studio'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
 // For searchbar
@@ -89,7 +88,7 @@ function SignUpHeader(){
             <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
             <Link href="#" underline="none">
               <a style={{ textDecoration: "none" }}>
-                <img height="40px" src={Logo} alt="logo"></img>
+                <img height="40px" src={Logo} alt="logo" />
               </a>
             </Link>
 

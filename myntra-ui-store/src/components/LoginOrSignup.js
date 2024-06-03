@@ -13,8 +13,8 @@ function loginOrSignup(){
         <Grid  display="flex" alignItems="center" justifyContent="center" style={{ backgroundColor: "#FFF3EC" }}>
           <Box component="span"  sx={{ display: "inline-block",  transform: "scale(0.8)" }} >
             <Card>
-              <Grid  FlexDirection="column">
-                <CardMedia component="img" minHeight="100vh" src={loginImage} alt="loginImage"/>
+              <Grid  flexDirection="column">
+                <CardMedia component="img" minheight="100vh" src={loginImage} alt="loginImage"/>
                 <Typography variant="h6" gutterBottom style={{margin: "50px 40px 15px"}}>
                   <strong>Login</strong> or <strong>Signup</strong>
                 </Typography>
